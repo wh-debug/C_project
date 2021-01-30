@@ -1,7 +1,7 @@
 /*
  * @Author: 零到正无穷
  * @Date: 2021-01-30 18:10:51
- * @LastEditTime: 2021-01-30 19:25:26
+ * @LastEditTime: 2021-01-30 19:24:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \new_C\pointer_2.c
@@ -81,8 +81,7 @@ int main(void){
     int  i = 10;
 
     p = &i;
-    q = p;
-    
+    8q = *p;
     printf("%d\n",*p);
     printf("%d\n",*q);
     system("pause");
