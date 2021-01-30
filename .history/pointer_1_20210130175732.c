@@ -2,8 +2,7 @@
 #include "stdlib.h"
 
 int main(void){
-    int * p = NULL; /* 地址就是指针，指针就是指针
-                    * p是指针变量
+    int * p = NULL; /*
                     * p是变量的名字，int * 表示的是p变量存放的是
                     * int类型的变量的地址
                     * int * p : 不表示定义了一个名字叫做*p的变量

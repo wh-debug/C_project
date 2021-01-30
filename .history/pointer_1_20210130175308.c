@@ -2,8 +2,7 @@
 #include "stdlib.h"
 
 int main(void){
-    int * p = NULL; /* 地址就是指针，指针就是指针
-                    * p是指针变量
+    int * p = NULL; /*
                     * p是变量的名字，int * 表示的是p变量存放的是
                     * int类型的变量的地址
                     * int * p : 不表示定义了一个名字叫做*p的变量
@@ -21,7 +20,6 @@ int main(void){
                  *   如果p是个指针变量，并且p存放了普通变量i的地址则p
                  * 指向了普通变量i，*p就完全等同于 i
                  * 或者说：在所有出现*p的地方均可以替换为i
-                 * *p代表的是以p的内容为地址的变量
                 */
     printf("%d\n", i);
     printf("%d\n", *p);
