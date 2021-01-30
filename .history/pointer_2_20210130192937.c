@@ -1,12 +1,12 @@
 /*
  * @Author: 零到正无穷
  * @Date: 2021-01-30 18:10:51
- * @LastEditTime: 2021-01-30 19:50:40
+ * @LastEditTime: 2021-01-30 19:25:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \new_C\pointer_2.c
  */
-/****
+/* 
 !  2021年1月30日18:50:15
 ! 指针：便是一些复杂的数据结构
 ! 使函数返回一个以上的值，快速的传递数据
@@ -30,7 +30,8 @@ todo 指针分类
 *   3, 指针和函数
 *   4，指针和结构体
 *   5，多级指针
-
+*/
+/*
 !错误代码,其中p指向了一个不确定的地址，
 #include "stdio.h"
 #include "stdlib.h"
@@ -44,7 +45,8 @@ int main(void){
     system("pause");
     return 0;
 }
-
+*/
+/*
 !错误代码,其中p指向了一个不确定的地址，
 #include "stdio.h"
 #include "stdlib.h"
@@ -68,7 +70,7 @@ int main(void){
     system("pause");
     return 0;
 }
-***/
+*/
 
 #include "stdio.h"
 #include "stdlib.h"
@@ -79,7 +81,7 @@ int main(void){
     int  i = 10;
 
     p = &i;
-    q = p;  //todo 这句是对的，首先p取得了i的地址，再讲p的地址赋给了q，
+    q = p;
     
     printf("%d\n",*p);
     printf("%d\n",*q);

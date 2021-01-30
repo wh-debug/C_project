@@ -1,7 +1,7 @@
 /*
  * @Author: 零到正无穷
  * @Date: 2021-01-30 18:10:51
- * @LastEditTime: 2021-01-30 19:50:40
+ * @LastEditTime: 2021-01-30 19:42:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \new_C\pointer_2.c
@@ -79,7 +79,7 @@ int main(void){
     int  i = 10;
 
     p = &i;
-    q = p;  //todo 这句是对的，首先p取得了i的地址，再讲p的地址赋给了q，
+    q = p;
     
     printf("%d\n",*p);
     printf("%d\n",*q);
