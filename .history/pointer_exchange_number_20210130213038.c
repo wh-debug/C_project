@@ -1,7 +1,7 @@
 /*
  * @Author: 零到正无穷
  * @Date: 2021-01-30 20:40:33
- * @LastEditTime: 2021-02-01 22:23:57
+ * @LastEditTime: 2021-01-30 21:28:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \new_C\exchange_number.c
@@ -15,7 +15,7 @@
  * @param {int} b
  * @return 没有返回值
  */
-void exchange_num(int a, int b){//!和主函数的a,b不是同一个变量
+void exchange_num(int a, int b){
     int t = 0;
 
     t = a;
