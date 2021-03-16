@@ -6,4 +6,11 @@
  * @Description: In User Settings Edit
  * @FilePath: \new_C\test_pointer.c
  */
+int main(void){
+   
+    
+    printf("%d\n", **q);
+    system("pause");
+    return 0;
+}
 
