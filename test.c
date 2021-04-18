@@ -1,19 +1,28 @@
 #include "stdio.h"
 #include "stdlib.h"
-#include "windows.h"
 
-int main(void)
-{
-    int * p = NULL;
-    char * q = NULL;
-    /*system("mode con cols=66 lines=20");
-    system("color 0A");
-    printf("Dream it possible！\n");
-    printf("%*s\n", 33, "123");
-    printf("%5d\n", 1212124);*/
-    printf("%d\n", sizeof(p));
-    printf("%d\n", sizeof(q));
-    printf("%d\n", sizeof(float *));
+#define IN  1
+#define OUT 0
+//!统计输入的行数，单词数，字符数
+int main(void){
+    int c, nl, nw, nc, state;
+
+    state = OUT;
+    nl = nc = nw = 0;
+    while ((c = getchar()) != EOF)
+    {
+        ++nc;
+        if(c == '\n'){
+            ++nl;
+        }
+        if(c == ' ' || c == '\n' || c == '\t'){
+            state = OUT;
+        }else if(state == OUT){
+            state = IN;
+            ++nw;
+        }
+    }
+    printf("%d %d %d\n", nl, nw, nc);    
     system("pause");
     return 0;
 }
