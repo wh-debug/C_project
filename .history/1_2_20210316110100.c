@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-28 22:45:14
- * @LastEditTime: 2021-03-17 19:09:39
+ * @LastEditTime: 2021-03-16 11:00:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \new_C\1_2.c
@@ -11,7 +11,9 @@
 
 int main(void){
 
-    printf("您好\n");
+    printf("hello world!\n");
+    
+    printf("hello world!\n");
 
     system("pause");
     return 0;
