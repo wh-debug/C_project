@@ -1,29 +1,37 @@
-/*2021年1月4日20:40:31
-  功能：冒泡排序（由小到大的排序）
-  作者：零到正无穷
-*/
-#include <stdio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "stdlib.h"
 
+#define NUM 5
 
-void bubble_sort(int arr[], int len) {
-        int i, j, temp;
-        for (i = 0; i < len - 1; i++)
-                for (j = 0; j < len - 1 - i; j++)
-                        if (arr[j] > arr[j + 1]) {
-                                temp = arr[j];
-                                arr[j] = arr[j + 1];
-                                arr[j + 1] = temp;
-                        }
-}
+int main(void)
+{
+    int i, j;
+    int num2[10];
+    int max = 0;
 
+    for(i = 0; i < NUM; i++)
+    {
+        printf("please input %d number: ", i);
+        scanf("%d", &num2[i]);
+    }
 
-int main() {
-        int arr[] = { 22, 34, 3, 32, 82, 55, 89, 50, 37, 5, 64, 35, 9, 70 };
-        int len = (int) sizeof(arr) / sizeof(*arr);   //计算数组中数据的长度，14
-        bubble_sort(arr, len);
-        for (int i = 0; i < len; i++)
-                printf("%d ", arr[i]);
-        system("pause");
-        return 0;
+    for(i = 0; i < NUM - 1; i++) 
+    {
+        for(j = 0; j < NUM - i - 1; j++) //减1的目的,想一想
+        {
+            if(num2[j] > num2[j + 1])
+            {
+                max = num2[j];
+                num2[j] = num2[j + 1];
+                num2[j + 1] = max;
+            }
+        }
+    }
+
+    for( i = 0; i < NUM; i++)
+    {
+        printf("%d\n", num2[i]);
+    }
+    system("pause");
+    return 0;
 }
