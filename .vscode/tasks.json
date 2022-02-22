@@ -1,18 +1,18 @@
 {
     "tasks": [
         {
-            "type": "shell",
-            "label": "Compile & Link",
-            "command": "/usr/bin/g++-11",
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}", // the current opened file
+                "${file}",
                 "-o",
-                "${fileDirname}/build/${fileBasenameNoExtension}.out" //the current opened file's basename with no file extension
+                "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
             ],
             "options": {
-                "cwd": "${fileDirname}"  // ${fileDirname} - the current opened file's dirname
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
