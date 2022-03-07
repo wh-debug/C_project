@@ -29,7 +29,8 @@
             ],
             "preLaunchTask": "C/C++: g++ build active file",
             // 使用塔不会中展示多余信息的输出，解决网址https://github.com/microsoft/vscode-cpptools/issues/3298
-            "miDebuggerArgs": "-q -ex quit; wait() { fg >/dev/null; }; /bin/gdb -q --interpreter=mi"
+            "miDebuggerArgs": "-q -ex quit; wait() { fg >/dev/null; }; /bin/gdb -q --interpreter=mi",
+            "editor.fontLigatures": true,
             // "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

@@ -8,7 +8,7 @@ int main(void)
     int number;
     int sum = 0;
     
-    cout << "please input number: " << endl;
+    cout << "please input number: " << endl;  //是回车加清空缓冲区
 
     do
     {
